@@ -78,7 +78,8 @@
   .tag {
         clear: both;
         display: inline-block;
-        width: 700px;
+        max-width: 600px;
+      width: 100%;
    
   }
     p {
@@ -95,7 +96,14 @@
 /*      box-shadow: 0 4px 12px rgba(0,0,0,0.08);*/
       margin-top: 20px;
         border: 2px dotted  #1ae085;
+        text-align: center;
     }
+      
+      .content {
+          display: inline-block;
+          width: 100%;
+          max-width: 600px;
+      }
     .progress {
       background: #4f2d8d;
       border-radius: 20px;
@@ -134,33 +142,38 @@
 
 
     <h1>Palīdzi mums izveidot mākslas reklāmu</h1>
-    <p class="tag"> Mākslas projekta īstenošanai mēs cenšamies savākt 275 eiro, katrs ziedojums mums palīdz sasniegt šo mērķi.</p>
+    <p class="tag content"> Mākslas projekta īstenošanai mēs cenšamies savākt 275 eiro, katrs ziedojums mums palīdz sasniegt šo mērķi.</p>
 
     <video controls loop autoplay muted>
     <source src="kampanas-video-web.mp4" type="video/mp4">
     </video>
     <div class="card">
+        <div class="content">
       <h2>Par projektu</h2>
       <p>
         Rīgā, Brīvības ielā 226, atrodas reklāmas ekrāns, tas katru dienu raida reklāmas pretim esošai mājai. Mākslas projekta ietvaros mēs vēlamies izveidot savu reklāmu konkrēti šīs mājas iedzīvotājiem.
       </p>
-  
+        </div>
     </div>
       
 
 
     <div class="card">
+        <div class="content">
       <h2>Progress</h2>
       <p><strong>€20 savākti no €275</strong></p>
       <div class="progress">
         <div class="progress-bar" style="width:7%"></div>
       </div>
+            </div>
     </div>
 
     <div class="card">
+        <div class="content">
       <h2>Atbalsti mūs</h2>
       <p>Ziedo sev vēlamo summu! 🙏 Un uzzini, kad Tu varēsi aiziet un noskatīties mūsu mākslas reklāmu. Atsūtīsim Tev konkrētu datumu.</p>
       <a href="https://revolut.me/elinasundukova?currency=EUR&amount=1000" class="button">Ziedo ar Revolut</a>
+        </div>
     </div>
 
     <p class="small">Paldies par atbalstu &#128154;</p>
