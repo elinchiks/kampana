@@ -20,11 +20,16 @@
         "ELSH" 0,
         "ELXP" 0;
     }
+
+      .logo strong {
+          display: block;
+          font-weight: 400;
+      }
     body {
       font-family: Helvetica, sans-serif;
       margin: 0;
-      background: #f7f7f7;
-      color: #333;
+      background: #fff;
+      color: #4f2d8d;
       text-align: center;
     }
     .nav {
@@ -42,7 +47,8 @@
 
       }
     .container {
-      max-width: 700px;
+        text-align: center;
+      max-width: 1000px;
         overflow: hidden;
       margin: auto;
       padding: 40px 20px;
@@ -51,7 +57,8 @@
         max-width: 100%;
     }
     h1 {
-        display: block;
+        clear: both;
+        display: inline-block;
         clear: both;
         font-size: 3em;
         line-height: 1em;
@@ -59,20 +66,38 @@
         font-family: 'Bitcount Grid Double';
         font-weight: 400;
         color: #1ae085;
+        width: 700px;
+        max-width: 100%;
     }
+    h2 {
+        font-size: 2em;
+        font-family: 'Bitcount Grid Double';
+        font-weight: 400;
+        color: #1ae085;
+    }
+  .tag {
+        clear: both;
+        display: inline-block;
+        width: 700px;
+   
+  }
     p {
       font-size: 1.1em;
       line-height: 1.6;
     }
     .card {
+        clear: both;
+        display: inline-block;
+        width: 700px;
       background: white;
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/*      box-shadow: 0 4px 12px rgba(0,0,0,0.08);*/
       margin-top: 20px;
+        border: 2px dotted  #1ae085;
     }
     .progress {
-      background: #eee;
+      background: #4f2d8d;
       border-radius: 20px;
       overflow: hidden;
       margin: 20px 0;
@@ -94,7 +119,6 @@
     }
     .small {
       font-size: 0.9em;
-      color: #777;
       margin-top: 20px;
     }
   </style>
@@ -107,17 +131,20 @@
         <li><a href="index-en.html">en</a></li>
     </ul>
 -->
-    <h1>Palīdzi mums izveidot mākslas reklāmu</h1>
-    <p> Mākslas projekta īstenošanai mēs cenšamies savākt 275 eiro, katrs ziedojums mums palīdz sasniegt šo mērķi.</p>
 
+
+    <h1>Palīdzi mums izveidot mākslas reklāmu</h1>
+    <p class="tag"> Mākslas projekta īstenošanai mēs cenšamies savākt 275 eiro, katrs ziedojums mums palīdz sasniegt šo mērķi.</p>
+
+    <video controls loop autoplay muted>
+    <source src="kampanas-video-web.mp4" type="video/mp4">
+    </video>
     <div class="card">
       <h2>Par projektu</h2>
       <p>
         Rīgā, Brīvības ielā 226, atrodas reklāmas ekrāns, tas katru dienu raida reklāmas pretim esošai mājai. Mākslas projekta ietvaros mēs vēlamies izveidot savu reklāmu konkrēti šīs mājas iedzīvotājiem.
       </p>
-        <video controls loop autoplay muted>
-            <source src="kampanas-video-web.mp4" type="video/mp4">
-        </video>
+  
     </div>
       
 
@@ -136,7 +163,7 @@
       <a href="https://revolut.me/elinasundukova?currency=EUR&amount=1000" class="button">Ziedo ar Revolut</a>
     </div>
 
-    <p class="small">Paldies par atbalstu ❤️</p>
+    <p class="small">Paldies par atbalstu &#128154;</p>
 
   </div>
 </body>
