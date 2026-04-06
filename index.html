@@ -4,22 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support My Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
   <style>
+    .bitcount-grid-double-<uniquifier> {
+        font-family: "Bitcount Grid Double", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: Helvetica, sans-serif;
       margin: 0;
       background: #f7f7f7;
       color: #333;
       text-align: center;
     }
+    .nav {
+      list-style-type: none;
+      text-transform: uppercase;
+    float: right;
+    }
+      .nav li {
+          display: inline-block;
+                    padding: 0 10px 30px;
+      }
+      .nav a {
+          color: #1ae085;
+          text-decoration: none;
+
+      }
     .container {
       max-width: 700px;
+        overflow: hidden;
       margin: auto;
       padding: 40px 20px;
     }
+    .container video {
+        max-width: 100%;
+    }
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
+        display: block;
+        clear: both;
+        font-size: 3em;
+        line-height: 1em;
+        margin-bottom: 10px;
+        font-family: 'Bitcount Grid Double';
+        font-weight: 400;
+        color: #1ae085;
     }
     p {
       font-size: 1.1em;
@@ -41,12 +79,12 @@
     .progress-bar {
       height: 20px;
       width: 0%;
-      background: #4CAF50;
+      background: #1ae085;
     }
     .button {
       display: inline-block;
       padding: 15px 25px;
-      background: #4CAF50;
+      background: #1ae085;
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -62,33 +100,42 @@
 </head>
 <body>
   <div class="container">
-
-    <h1>Help Me Raise €300</h1>
-    <p><strong>Short pitch:</strong> I am raising €300 to support my project. Every contribution helps me get closer to my goal.</p>
+<!--
+    <ul class="nav">
+        <li><a href="index.html">lv</a></li>
+        <li><a href="index-en.html">en</a></li>
+    </ul>
+-->
+    <h1>Palīdzi mums izveidot mākslas reklāmu</h1>
+    <p> Mākslas projekta īstenošanai mēs cenšamies savākt 275 eiro, katrs ziedojums mums palīdz sasniegt šo mērķi.</p>
 
     <div class="card">
-      <h2>About the Project</h2>
+      <h2>Par projektu</h2>
       <p>
-        Explain your project here in 2–4 sentences. Be clear and honest.
-        What are you doing? Why does it matter? What will the money be used for?
+        Brīvības ielā 226 atrodas reklāmas ekrāns, tas katru dienu raida reklāmas pretim esošai mājai. Mākslas projekta ietvaros mēs vēlamies izveidot savu reklāmu konkrēti šīs mājas iedzīvotājiem.
       </p>
+        <video controls loop autoplay muted>
+            <source src="kampanas-video-web.mp4" type="video/mp4">
+        </video>
     </div>
+      
+
 
     <div class="card">
       <h2>Progress</h2>
-      <p><strong>€120 raised of €300 goal</strong></p>
+      <p><strong>€20 savākti no €275</strong></p>
       <div class="progress">
-        <div class="progress-bar" style="width:40%"></div>
+        <div class="progress-bar" style="width:7%"></div>
       </div>
     </div>
 
     <div class="card">
-      <h2>Support Me</h2>
-      <p>Click below to contribute any amount 🙏</p>
-      <a href="#" class="button">Donate via Revolut / PayPal</a>
+      <h2>Atbalsti mūs</h2>
+      <p>Ziedo sev vēlamo summu! 🙏 Un uzzini, kad Tu varēsi aiziet un noskatīties mūsu mākslas reklāmu. Atsūtīsim Tev konkrētu datumu.</p>
+      <a href="https://revolut.me/elinasundukova?currency=EUR&amount=1000" class="button">Ziedo ar Revolut</a>
     </div>
 
-    <p class="small">Thank you for your support ❤️</p>
+    <p class="small">Paldies par atbalstu ❤️</p>
 
   </div>
 </body>
